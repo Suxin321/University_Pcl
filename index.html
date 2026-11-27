@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#3482FF">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>University_Pcl · 课表排班</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="app.css?v=13">
+</head>
+<body>
+  <main id="view"></main>
+  <nav class="tabbar" id="tabbar">
+    <button data-tab="timetable" type="button">课表</button>
+    <button data-tab="roster" type="button">排班</button>
+    <button data-tab="settings" type="button">设置</button>
+  </nav>
+  <div id="dialogRoot"></div>
+  <input type="file" id="scheduleFile" class="file-input">
+  <input type="file" id="freeFile" class="file-input">
+  <script src="vendor/xlsx.full.min.js"></script>
+  <script src="core.js?v=13"></script>
+  <script src="app.js?v=13"></script>
+</body>
+</html>
